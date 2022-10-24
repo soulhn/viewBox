@@ -11,6 +11,10 @@
     <router-link to="/databinding/attr">속성 변경! </router-link> |
     <router-link to="/databinding/list">배열 바인딩! </router-link> |
     <router-link to="/databinding/class">클래스 바인딩! </router-link> |
+    <router-link to="/databinding/style">스타일 바인딩! </router-link> |
+    <hr />
+    <router-link to="/event/click">클릭 이벤트</router-link> |
+    <router-link to="/event/change">체인지 이벤트</router-link> |
   </nav>
   <router-view />
 </template>

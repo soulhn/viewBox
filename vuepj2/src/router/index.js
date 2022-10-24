@@ -100,6 +100,33 @@ const routes = [
         /* webpackChunkName: "databinding", webpackPrefetch:true */ "../views/1_databinding/DataBindingClassView.vue"
       ),
   },
+  {
+    //Class 바인딩
+    path: "/databinding/style",
+    name: "DataBindingStyleView",
+    component: () =>
+      import(
+        /* webpackChunkName: "databinding", webpackPrefetch:true */ "../views/1_databinding/DataBindingStyleView.vue"
+      ),
+  }, //----------- 이벤트 리스너 다루기 -----------
+  {
+    //클릭이벤트
+    path: "/event/click",
+    name: "EventClickView",
+    component: () =>
+      import(
+        /* webpackChunkName: "event", webpackPrefetch:true */ "../views/2_event/EventClickView.vue"
+      ),
+  },
+  {
+    //Change 이벤트
+    path: "/event/click",
+    name: "EventChangeView",
+    component: () =>
+      import(
+        /* webpackChunkName: "event", webpackPrefetch:true */ "../views/2_event/EventChangeView.vue"
+      ),
+  },
 ];
 
 const router = createRouter({
