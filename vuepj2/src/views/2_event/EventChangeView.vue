@@ -1,13 +1,19 @@
 <template>
   <div>
-    <select name="" id="">
+    <select name="" id="" @change="changeCity" v-model="selectedCity">
       <option value="">==도시선택==</option>
-      <option value="city.code" :key="city.code" v-for="city in cityList">
+      <option :value="city.code" :key="city.code" v-for="city in cityList">
         {{ city.title }}
       </option>
     </select>
     <select name="" id="">
-      <option value=""></option>
+      <option
+        :value="dong.dongCode"
+        :key="dong.dongCode"
+        v-for="dong in selectedDongList"
+      >
+        {{ dong.dongTitle }}
+      </option>
     </select>
   </div>
 </template>
@@ -17,6 +23,7 @@ export default {
   components: {},
   data() {
     return {
+      selectedCity: "",
       cityList: [
         { cityCode: "02", title: "서울" },
         { cityCode: "051", title: "부산" },
@@ -41,7 +48,13 @@ export default {
   created() {},
   mounted() {},
   unmounted() {},
-  methods: {},
+  methods: {
+    changeCity() {
+      this.selectedDongList = this.dongList.filter(
+        (dong) => dong.cityCode === this.selectedCity
+      );
+    },
+  },
 };
 </script>
 

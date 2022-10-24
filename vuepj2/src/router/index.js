@@ -120,7 +120,7 @@ const routes = [
   },
   {
     //Change 이벤트
-    path: "/event/click",
+    path: "/event/change",
     name: "EventChangeView",
     component: () =>
       import(
