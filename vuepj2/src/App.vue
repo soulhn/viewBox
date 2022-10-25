@@ -15,6 +15,7 @@
     <hr />
     <router-link to="/event/click">클릭 이벤트</router-link> |
     <router-link to="/event/change">체인지 이벤트</router-link> |
+    <router-link to="/event/key">키 이벤트</router-link> |
   </nav>
   <router-view />
 </template>

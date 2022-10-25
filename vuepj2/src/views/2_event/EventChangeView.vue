@@ -1,16 +1,32 @@
 <template>
   <div>
-    <select name="" id="" @change="changeCity" v-model="selectedCity">
+    <select name="" id="" @change="changeCity($event)" v-model="selectedCity">
       <option value="">==도시선택==</option>
-      <option :value="city.code" :key="city.code" v-for="city in cityList">
+      <option
+        :value="city.cityCode"
+        :key="city.cityCode"
+        v-for="city in cityList"
+      >
         {{ city.title }}
       </option>
     </select>
-    <select name="" id="">
+    <select>
       <option
         :value="dong.dongCode"
         :key="dong.dongCode"
         v-for="dong in selectedDongList"
+      >
+        {{ dong.dongTitle }}
+      </option>
+    </select>
+
+    <select name="" id="">
+      <option
+        :value="dong.dongCode"
+        :key="dong.dongCode"
+        v-for="dong in dongList.filter(
+          (dong) => dong.cityCode === selectedCity
+        )"
       >
         {{ dong.dongTitle }}
       </option>
@@ -49,7 +65,9 @@ export default {
   mounted() {},
   unmounted() {},
   methods: {
-    changeCity() {
+    changeCity(event) {
+      //이벤트 받는 방법
+      console.log(event.target.tagName);
       this.selectedDongList = this.dongList.filter(
         (dong) => dong.cityCode === this.selectedCity
       );
