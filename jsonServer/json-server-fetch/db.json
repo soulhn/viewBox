@@ -1,0 +1,85 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "myData": [
+    {
+      "id": "635914800d3655a79ab35b7d",
+      "index": 0,
+      "guid": "614b9798-19c0-4f59-8a40-04a2007e6b4d",
+      "isActive": false,
+      "balance": "$2,871.53",
+      "picture": "http://placehold.it/32x32",
+      "age": 39,
+      "eyeColor": "blue",
+      "name": "Blackwell Flores",
+      "gender": "male",
+      "company": "GEEKY",
+      "email": "blackwellflores@geeky.com",
+      "phone": "+1 (803) 571-3105",
+      "address": "812 Stoddard Place, Barclay, Marshall Islands, 1460"
+    },
+    {
+      "id": "635914805bc6fa5bd34db62e",
+      "index": 1,
+      "guid": "87644f3b-e2f3-472a-8f5a-edea5623c6b5",
+      "isActive": false,
+      "balance": "$1,296.64",
+      "picture": "http://placehold.it/32x32",
+      "age": 34,
+      "eyeColor": "green",
+      "name": "Angelique Richard",
+      "gender": "female",
+      "company": "BUZZOPIA",
+      "email": "angeliquerichard@buzzopia.com",
+      "phone": "+1 (932) 565-3848",
+      "address": "480 Fillmore Avenue, Dyckesville, Maine, 1144"
+    },
+    {
+      "id": "63591480b54fef70937d9da7",
+      "index": 2,
+      "guid": "0d3724fd-e1ae-4ea9-a53a-bbd01ed89f6c",
+      "isActive": true,
+      "balance": "$1,622.50",
+      "picture": "http://placehold.it/32x32",
+      "age": 22,
+      "eyeColor": "green",
+      "name": "Angelica Walters",
+      "gender": "female",
+      "company": "BLUPLANET",
+      "email": "angelicawalters@bluplanet.com",
+      "phone": "+1 (926) 546-2366",
+      "address": "560 Walker Court, Valmy, Texas, 8385"
+    },
+    {
+      "id": "63591480e494b7e7be3e5ff5",
+      "index": 3,
+      "guid": "a2a051ab-2916-49ce-a74a-7343fbe6f7a8",
+      "isActive": false,
+      "balance": "$2,661.11",
+      "picture": "http://placehold.it/32x32",
+      "age": 24,
+      "eyeColor": "blue",
+      "name": "Crane Mccarthy",
+      "gender": "male",
+      "company": "UNDERTAP",
+      "email": "cranemccarthy@undertap.com",
+      "phone": "+1 (879) 463-2143",
+      "address": "240 Adams Street, Edmund, Kansas, 851"
+    }
+  ]
+}

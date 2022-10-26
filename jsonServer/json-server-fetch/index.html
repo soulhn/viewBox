@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="getData()">조회</button>
+    <button onclick="postData()">생성</button>
+    <button onclick="putData()">수정</button>
+    <button onclick="deleteData()">삭제</button>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Company</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Adress</th>
+        </tr>
+      </thead>
+      <tbody id="tbBody"></tbody>
+    </table>
+    <script>
+      //조회 get 요청
+      function getData() {
+        fetch("http://localhost:3000/myData")
+          .then((response) => response.json())
+          .then((json) => {
+            const h = [];
+            for (const mydt of json) {
+              h.push(`<tr>`);
+              h.push(`<td>${mydt.name}</td>`);
+              h.push(`<td>${mydt.company}</td>`);
+              h.push(`<td>${mydt.email}</td>`);
+              h.push(`<td>${mydt.phone}</td>`);
+              h.push(`<td>${mydt.address}</td>`);
+              h.push(`</tr>`);
+            }
+            document.getElementById("tbBody").innerHTML = h.join("");
+          });
+      }
+      //삽입 post 요청
+      function postData() {
+        const newData = {
+          name: "HHHHH",
+          company: "DCU",
+          email: "HHHHH@cu.ac.kr",
+          phone: "010-0000-0000",
+          address: "Daecu",
+        };
+        fetch("http://localhost:3000/myData", {
+          method: "POST",
+          body: JSON.stringify(newData),
+          headers: {
+            "content-type": "application/json; charset=UTF-8",
+          },
+        })
+          .then((response) => response.json())
+          .then((json) => console.log(json));
+      }
+      //수정 put 요청
+      function putData() {
+        const newData = {
+          name: "DDDDD",
+          company: "DCU",
+          email: "DDDDD@cu.ac.kr",
+          phone: "010-1111-1111",
+          address: "Seoul",
+        };
+        fetch("http://localhost:3000/myData/63591480d5ac0ddd89509078", {
+          method: "PUT",
+          body: JSON.stringify(newData),
+          headers: {
+            "content-type": "application/json; charset=UTF-8",
+          },
+        })
+          .then((response) => response.json())
+          .then((json) => console.log(json));
+      }
+      //삭제 DELETE 요청
+      function deleteData() {
+        fetch("http://localhost:3000/myData/63591480d5ac0ddd89509078", {
+          method: "DELETE",
+        })
+          .then((response) => response.json())
+          .then((json) => console.log(json));
+      }
+    </script>
+  </body>
+</html>
