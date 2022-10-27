@@ -7,6 +7,7 @@
 
     <br />
     <el-button @click="goBack">뒤로가자</el-button>
+    <el-button @click="editArticle">수정하자</el-button>
   </div>
 </template>
 
@@ -36,6 +37,9 @@ export default {
   methods: {
     goBack() {
       this.$router.go(-1);
+    },
+    editArticle() {
+      this.$router.push({ path: `/board/write/${this.$route.params.id}` });
     },
   },
 };

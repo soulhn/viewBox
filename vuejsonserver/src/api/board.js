@@ -26,4 +26,11 @@ export default {
       body: body,
     });
   },
+  //데이터 수정
+  patchArticle: function (id, title, body) {
+    return axios.patch(BASE_URL + `posts/${id}`, {
+      title: title,
+      body: body,
+    });
+  },
 };
