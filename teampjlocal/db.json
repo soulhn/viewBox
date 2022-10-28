@@ -1,0 +1,12 @@
+{
+  "address": [
+    { "id": 1, "user_email": "exam@exam.com", "user_name": "홍길동", "user_department": "개발", "user_phone_number": "010-1234-1234", "user_duty": "팀장" },
+    { "id": 2, "user_email": "exam@exam.com", "user_name": "김길동", "user_department": "개발", "user_phone_number": "010-1234-1234", "user_duty": "사원" },
+    { "id": 3, "user_email": "exam@exam.com", "user_name": "황길동", "user_department": "개발", "user_phone_number": "010-1234-1234", "user_duty": "사원" },
+    { "id": 4, "user_email": "exam@exam.com", "user_name": "이길동", "user_department": "개발", "user_phone_number": "010-1234-1234", "user_duty": "사원" },
+    { "id": 5, "user_email": "exam@exam.com", "user_name": "박길동", "user_department": "개발", "user_phone_number": "010-1234-1234", "user_duty": "사원" }
+  ],
+  "history":[{
+    {"id" :1, }
+  }]
+}
