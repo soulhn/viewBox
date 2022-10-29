@@ -1,8 +1,8 @@
 <template>
   <nav>
     <MyHearder />
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/">Home</router-link> | <router-link to="/about">About</router-link> |
+    <router-link to="/modal">Modal</router-link>
   </nav>
   <button type="button" class="btn btn-primary">Primary</button>
   <router-view />
