@@ -32,7 +32,7 @@
 </template>
 
 <script>
-import apiAddress from "@/api/apiAddress";
+import apiAddress from "../api/apiAddress";
 
 export default {
   components: {},

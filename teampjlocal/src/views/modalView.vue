@@ -21,8 +21,9 @@
 </template>
 
 <script>
-import apiAddress from "@/api/apiAddress";
+import apiAddress from "../api/apiAddress";
 import Discount from "../components/Discount.vue";
+
 export default {
   components: {
     Discount: Discount,
@@ -37,7 +38,8 @@ export default {
   setup() {},
   created() {},
   mounted() {
-    apiAddress //mounted 시 데이터 불러오기
+    //mounted 시 데이터 불러오기
+    apiAddress
       .getData("roomData")
       .then((response) => {
         this.roomData = response.data;
