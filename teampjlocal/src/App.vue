@@ -23,7 +23,17 @@ export default {
   },
   setup() {},
   created() {},
-  mounted() {},
+  mounted() {
+    apiAddress
+      .getAdress("address")
+      .then((response) => {
+        this.addressBook = response.data;
+      })
+      .catch(function (e) {
+        console.log(e);
+        console.log("Adress를 호출하는 중 오류");
+      });
+  },
   unmounted() {},
   methods: {},
 };
