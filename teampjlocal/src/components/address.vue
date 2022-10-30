@@ -3,7 +3,7 @@
     <h4>주소록</h4>
 
     <input type="text" @input="searchGroup($event)" />
-    <span>{{}}</span>
+
     <table class="table table-striped">
       <thead>
         <tr>
@@ -48,7 +48,7 @@ export default {
   created() {},
   mounted() {
     apiAddress
-      .getAdress("address")
+      .getData("address")
       .then((response) => {
         this.addressBook = response.data;
       })
