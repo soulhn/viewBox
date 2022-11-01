@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import ModalView from "../views/modalView.vue";
+import Card from "@/components/card.vue";
 
 const routes = [
   {
@@ -20,6 +21,11 @@ const routes = [
     path: "/modal",
     name: "modal",
     component: ModalView,
+  },
+  {
+    path: "/card",
+    name: "card",
+    component: Card,
   },
 ];
 

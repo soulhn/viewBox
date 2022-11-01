@@ -1,6 +1,6 @@
 <template>
   <div>
-    <body className="snippet-body">
+    <div class="snippet-body">
       <div class="container mt-5 mb-5">
         <div class="row d-flex align-items-center justify-content-center">
           <div class="col-md-6">
@@ -46,7 +46,7 @@
           </div>
         </div>
       </div>
-    </body>
+    </div>
   </div>
 </template>
 
@@ -90,7 +90,7 @@ export default {
 /* @import url("https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css"); */
 /* @import url("https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js"); */
 
-body {
+.snippet-body {
   background-color: #eee;
   font-family: "Poppins", sans-serif;
   font-weight: 300;

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <H1>{{ propsString }}</H1>
+    <h1>{{ propsString }}</h1>
   </div>
 </template>
 
