@@ -1,6 +1,6 @@
 <template>
   <div>
-    <H1>{{ propsTest }}</H1>
+    <H1>{{ propsString }}</H1>
   </div>
 </template>
 
@@ -8,7 +8,7 @@
 export default {
   components: {},
   props: {
-    propsTest: String,
+    propsString: String,
   },
   data() {
     return {

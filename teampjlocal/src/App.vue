@@ -1,9 +1,10 @@
 <template>
   <nav>
-    <PropsTest :propsTest="propsTest" />
+    <PropsTest :propsString="propsString" />
     <MyHearder />
-    <router-link to="/">Home</router-link> | <router-link to="/about">About</router-link> |
-    <router-link to="/modal">Modal</router-link>
+    <router-link to="/">Home</router-link> | <router-link to="/about">About</router-link> | <router-link to="/modal">Modal</router-link> | <router-link to="/card">Card</router-link>
+
+    <Card />
   </nav>
 
   <router-view />
@@ -12,17 +13,19 @@
 <script>
 import MyHearder from "./components/Header.vue";
 import PropsTest from "./components/PropsTest.vue";
+import Card from "@/components/card.vue";
 
 export default {
   name: "Header",
   components: {
     MyHearder,
     PropsTest,
+    Card,
   },
   data() {
     return {
       sampleData: "",
-      propsTest: "props 실습이에용~",
+      propsString: "props 실습이에용~",
     };
   },
   setup() {},
@@ -33,7 +36,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

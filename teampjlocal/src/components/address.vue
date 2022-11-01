@@ -3,10 +3,6 @@
     <h4>주소록</h4>
 
     <input type="text" @input="searchGroup($event)" />
-<<<<<<< HEAD
-    <span>{{}}</span>
-=======
->>>>>>> efa8c746c7c26ef2dc653bafaba9f2e6bb4b7c7a
 
     <table class="table table-striped">
       <thead>
