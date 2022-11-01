@@ -1,9 +1,10 @@
 import axios from "axios";
 
-const BASE_URL = "  http://localhost:3000/";
+const BASE_URL = "http://localhost:3000/";
 
 export default {
-  getAdress: function (name) {
+  name: "apiAddress",
+  getData: function (name) {
     return axios.get(BASE_URL + `${name}`);
   },
 };
