@@ -4,6 +4,7 @@
 
     <input type="text" @input="searchGroup($event)" />
     <span>{{}}</span>
+
     <table class="table table-striped">
       <thead>
         <tr>
