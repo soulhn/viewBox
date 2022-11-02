@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import ModalView from "../views/modalView.vue";
 import Card from "@/components/card.vue";
+import Login from "@/components/loginForm.vue";
 
 const routes = [
   {
@@ -26,6 +27,11 @@ const routes = [
     path: "/card",
     name: "card",
     component: Card,
+  },
+  {
+    path: "/login",
+    name: "login",
+    component: Login,
   },
 ];
 

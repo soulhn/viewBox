@@ -2,7 +2,7 @@
   <nav>
     <PropsTest :propsString="propsString" />
     <MyHearder />
-    <router-link to="/">Home</router-link> | <router-link to="/about">About</router-link> | <router-link to="/modal">Modal</router-link> | <router-link to="/card">Card</router-link>
+    <router-link to="/">Home</router-link> | <router-link to="/about">About</router-link> | <router-link to="/modal">Modal</router-link> | <router-link to="/card">Card</router-link> | <router-link to="/login">login</router-link>
   </nav>
 
   <router-view />
