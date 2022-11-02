@@ -16,30 +16,39 @@
               <div class="p-2">
                 <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                 <hr />
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="d-flex flex-row icons d-flex align-items-center"><i class="fa fa-heart"></i> <i class="ml-2 fa fa-smile-o"></i></div>
-                  <div class="d-flex flex-row muted-color"><span>2 comments</span> <span class="ml-2">Share</span></div>
-                </div>
-                <hr />
-                <div class="comments">
-                  <div class="d-flex flex-row mb-2">
-                    <img src="https://i.imgur.com/9AZ2QX1.jpg" width="40" class="rounded-image" />
-                    <div class="d-flex flex-column ml-2">
-                      <span class="name">Daniel Frozer</span> <small class="comment-text">I like this alot! thanks alot</small>
-                      <div class="d-flex flex-row align-items-center status"><small>Like</small> <small>Reply</small> <small>Translate</small> <small>18 mins</small></div>
+                <div class="justify-content-between align-items-center">
+                  <div class="d-flex flex-row icons d-flex align-items-center"><i class="fa fa-heart"></i>좋아요</div>
+                  <div class="d-flex flex-row muted-color accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        <i class="fa fa-bars" aria-hidden="true">댓글 펼치기</i>
+                      </button>
                     </div>
                   </div>
-                  <div class="d-flex flex-row mb-2">
-                    <img src="https://i.imgur.com/1YrCKa1.jpg" width="40" class="rounded-image" />
-                    <div class="d-flex flex-column ml-2">
-                      <span class="name">Elizabeth goodmen</span> <small class="comment-text">Thanks for sharing!</small>
-                      <div class="d-flex flex-row align-items-center status"><small>Like</small> <small>Reply</small> <small>Translate</small> <small>8 mins</small></div>
+                  <hr />
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="comments accordion-body">
+                      <div class="d-flex flex-row mb-2">
+                        <img src="https://i.imgur.com/9AZ2QX1.jpg" width="40" class="rounded-image" />
+                        <div class="d-flex flex-column ml-2">
+                          <span class="name">김석현</span> <small class="comment-text">난 코딩이 좋아</small>
+                          <div class="d-flex flex-row align-items-center status"><small>Like</small> <small>Reply</small> <small>Translate</small> <small>18 mins</small></div>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-row mb-2">
+                        <img src="https://i.imgur.com/1YrCKa1.jpg" width="40" class="rounded-image" />
+                        <div class="d-flex flex-column ml-2">
+                          <span class="name">이정훈</span> <small class="comment-text">나도 코딩이 좋아</small>
+                          <div class="d-flex flex-row align-items-center status"><small>Like</small> <small>Reply</small> <small>Translate</small> <small>8 mins</small></div>
+                        </div>
+                      </div>
+                      <div class="comment-input">
+                        <input type="text" class="form-control" />
+                        <div class="fonts"><i class="fa fa-camera"></i></div>
+                      </div>
                     </div>
                   </div>
-                  <div class="comment-input">
-                    <input type="text" class="form-control" />
-                    <div class="fonts"><i class="fa fa-camera"></i></div>
-                  </div>
+                  <!-- 요위에 까지가 아코디언 -->
                 </div>
               </div>
             </div>
@@ -86,9 +95,6 @@ export default {
 }
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
-/* @import url("https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"); */
-/* @import url("https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css"); */
-/* @import url("https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js"); */
 
 .snippet-body {
   background-color: #eee;
@@ -168,5 +174,9 @@ hr {
 
 .mr-2 {
   margin-right: 0.5rem !important;
+}
+
+.sh {
+  border: 1px solid red;
 }
 </style>
