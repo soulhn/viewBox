@@ -8,7 +8,7 @@
               <div class="d-flex justify-content-between p-2 px-3">
                 <div class="d-flex flex-row align-items-center">
                   <img src="https://i.imgur.com/UXdKE3o.jpg" width="50" class="rounded-circle" />
-                  <div class="d-flex flex-column ml-2"><span class="font-weight-bold">Jeanette Sun</span> <small class="text-primary">Collegues</small></div>
+                  <div class="d-flex flex-column ml-2"><span class="font-weight-bold">이정훈</span> <small class="text-primary">Collegues</small></div>
                 </div>
                 <div class="d-flex flex-row mt-1 ellipsis"><small class="mr-2">수정</small> <i class="fa fa-pencil-square"></i></div>
               </div>
@@ -17,24 +17,26 @@
                 <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                 <hr />
                 <div class="justify-content-between align-items-center">
-                  <div class="d-flex flex-row icons d-flex align-items-center"><i class="fa fa-heart"></i>좋아요</div>
-                  <div class="d-flex flex-row muted-color accordion accordion-flush" id="accordionFlushExample">
-                    <div class="accordion-item">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                        <i class="fa fa-bars" aria-hidden="true">댓글 펼치기</i>
-                      </button>
+                  <!-- ㅁㄴㅇ -->
+                  <div class="d-flex justify-content-between p-2 px-3">
+                    <div class="shfl">
+                      <div class="d-flex flex-row icons d-flex align-items-center"><i class="fa fa-heart"></i>좋아요</div>
                     </div>
-                  </div>
-                  <hr />
-                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                    <div class="comments accordion-body">
-                      <div class="d-flex flex-row mb-2">
-                        <img src="https://i.imgur.com/9AZ2QX1.jpg" width="40" class="rounded-image" />
-                        <div class="d-flex flex-column ml-2">
-                          <span class="name">김석현</span> <small class="comment-text">난 코딩이 좋아</small>
-                          <div class="d-flex flex-row align-items-center status"><small>Like</small> <small>Reply</small> <small>Translate</small> <small>18 mins</small></div>
+                    <div class="shfr">
+                      <div class="d-flex flex-row muted-color accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            <i class="fa fa-bars" aria-hidden="true">댓글 펼치기</i>
+                          </button>
                         </div>
                       </div>
+                    </div>
+                  </div>
+                  <!-- ㅁㄴㅇ -->
+                  <hr />
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <!-- 댓글 시작 -->
+                    <div class="comments accordion-body">
                       <div class="d-flex flex-row mb-2">
                         <img src="https://i.imgur.com/1YrCKa1.jpg" width="40" class="rounded-image" />
                         <div class="d-flex flex-column ml-2">
@@ -42,11 +44,23 @@
                           <div class="d-flex flex-row align-items-center status"><small>Like</small> <small>Reply</small> <small>Translate</small> <small>8 mins</small></div>
                         </div>
                       </div>
+
+                      <div class="d-flex flex-row mb-2">
+                        <img src="https://i.imgur.com/9AZ2QX1.jpg" width="40" class="rounded-image" />
+                        <div class="d-flex flex-column ml-2">
+                          <span class="name">Daniel Frozer</span> <small class="comment-text">I like this alot! thanks alot</small>
+                          <div class="d-flex flex-row align-items-center status"><small>Like</small> <small>Reply</small> <small>Translate</small> <small>18 mins</small></div>
+                        </div>
+                      </div>
+
+                      <!-- 댓글 종료 -->
                       <div class="comment-input">
                         <input type="text" class="form-control" />
                         <div class="fonts"><i class="fa fa-camera"></i></div>
                       </div>
                     </div>
+
+                    <!-- 댓글 종료 -->
                   </div>
                   <!-- 요위에 까지가 아코디언 -->
                 </div>
@@ -100,6 +114,8 @@ export default {
   background-color: #eee;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
+
+  overflow-x: scroll;
 }
 .card {
   border: none;
@@ -178,5 +194,12 @@ hr {
 
 .sh {
   border: 1px solid red;
+}
+
+.shfl {
+  float: left;
+}
+.shfr {
+  float: right;
 }
 </style>
