@@ -3,6 +3,7 @@ import HomeView from "../views/HomeView.vue";
 import ModalView from "../views/modalView.vue";
 import Card from "@/components/card.vue";
 import Login from "@/components/loginForm.vue";
+import ModalAdress from "../components/modalAdress.vue";
 
 const routes = [
   {
@@ -32,6 +33,11 @@ const routes = [
     path: "/login",
     name: "login",
     component: Login,
+  },
+  {
+    path: "/modalAdress",
+    name: "modalAdress",
+    component: ModalAdress,
   },
 ];
 

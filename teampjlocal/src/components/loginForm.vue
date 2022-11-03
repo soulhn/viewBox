@@ -11,7 +11,7 @@
           <div class="icon d-flex align-items-center justify-content-center">
             <span class="ion-ios-person"></span>
           </div>
-          <h3 class="text-center mb-4">Sign In</h3>
+          <h3 class="text-center mb-4">로그인</h3>
           <form action="#" class="login-form">
             <div class="form-group">
               <input type="text" class="form-control rounded-left" placeholder="Username" />
@@ -23,15 +23,13 @@
               <button type="submit" class="form-control btn btn-primary rounded submit px-3">Login</button>
             </div>
             <div class="form-group d-md-flex">
-              <div class="form-check w-50">
-                <label class="custom-control fill-checkbox">
-                  <input type="checkbox" class="fill-control-input" />
-                  <span class="fill-control-indicator"></span>
-                  <span class="fill-control-description">Remember Me</span>
-                </label>
+              <!-- <span class="fill-control-description">아이디찾기</span> -->
+              <div class="w-50 text-md-left">
+                <a href="#">아이디찾기</a>
               </div>
+
               <div class="w-50 text-md-right">
-                <a href="#">Forgot Password</a>
+                <a href="#">비밀번호찾기</a>
               </div>
             </div>
           </form>
@@ -60,4 +58,8 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+@import url("https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.0.0-19/css/ionicons.min.css");
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900");
+@import "@/assets/css/login/style.css";
+</style>
