@@ -12,13 +12,19 @@
             <span class="ion-ios-person"></span>
           </div>
           <h3 class="text-center mb-4">로그인</h3>
+          <h4>{{ user_email }}</h4>
+          <h4></h4>
+
           <form action="#" class="login-form">
+            <!-- 아이디 시작 -->
             <div class="form-group">
-              <input type="text" class="form-control rounded-left" placeholder="Username" />
+              <input type="text" class="form-control rounded-left" placeholder="Username" v-model="user_email" />
             </div>
+            <!-- 아이디 끝 -->
             <div class="form-group d-flex">
-              <input type="password" class="form-control rounded-left" placeholder="Password" />
+              <input type="password" class="form-control rounded-left" placeholder="Password" v-model="user_password" />
             </div>
+            <!-- 비밀번호 끝 -->
             <div class="form-group">
               <button type="submit" class="form-control btn btn-primary rounded submit px-3">Login</button>
             </div>
@@ -47,14 +53,29 @@ export default {
   components: {},
   data() {
     return {
-      sampleData: "",
+      user_email: "",
+      user_password: "",
     };
   },
   setup() {},
   created() {},
   mounted() {},
   unmounted() {},
-  methods: {},
+  methods: {
+    fnLogin() {
+      if (this.user_email === "") {
+        alert("ID를 입력하세요.");
+        return;
+      }
+
+      if (this.user_password === "") {
+        alert("비밀번호를 입력하세요.");
+        return;
+      }
+
+      alert("로그인 되었습니다.");
+    },
+  },
 };
 </script>
 

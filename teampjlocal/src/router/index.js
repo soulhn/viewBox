@@ -4,6 +4,7 @@ import ModalView from "../views/modalView.vue";
 import Card from "@/components/card.vue";
 import Login from "@/components/loginForm.vue";
 import ModalAdress from "../components/modalAdress.vue";
+import Project from "../views/ProjectView.vue";
 
 const routes = [
   {
@@ -38,6 +39,11 @@ const routes = [
     path: "/modalAdress",
     name: "modalAdress",
     component: ModalAdress,
+  },
+  {
+    path: "/project",
+    name: "project",
+    component: Project,
   },
 ];
 

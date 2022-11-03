@@ -3,7 +3,7 @@
     <PropsTest :propsString="propsString" />
     <MyHearder />
     <router-link to="/">Home</router-link> | <router-link to="/about">About</router-link> | <router-link to="/modal">Modal</router-link> | <router-link to="/card">Card</router-link> | <router-link to="/login">login</router-link> |
-    <router-link to="/modalAdress">ModalAdress</router-link>
+    <router-link to="/modalAdress">ModalAdress</router-link> | <router-link to="/project">Project</router-link>
   </nav>
 
   <router-view />
@@ -39,7 +39,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
-  text-align: center;
+  /* text-align: center; */
 }
 
 nav {
