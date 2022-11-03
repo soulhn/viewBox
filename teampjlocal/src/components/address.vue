@@ -35,10 +35,9 @@
 import apiAddress from "../api/apiAddress";
 
 export default {
+  name: "Address",
   components: {},
   data() {
-    name: "Address";
-
     return {
       addressBook: [], //주소록
       errorshow: false,

@@ -58,8 +58,9 @@ export default {
 };
 </script>
 
+<style src="../assets/css/login/style.css" scoped></style>
+
 <style scoped>
-@import url("https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.0.0-19/css/ionicons.min.css");
-@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900");
-@import "@/assets/css/login/style.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.0.0-19/css/ionicons.min.css";
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900";
 </style>
