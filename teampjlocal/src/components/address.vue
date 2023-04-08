@@ -60,6 +60,7 @@ export default {
   methods: {
     searchGroup(event) {
       const len = this.addressBook.length;
+      let resultFound = false;
 
       for (let i = 0; i < len; i++) {
         if (
@@ -70,12 +71,12 @@ export default {
           this.addressBook[i].user_phone_number.includes(event.target.value) === false
         ) {
           document.querySelectorAll(".group-item")[i].style.display = "none";
-          this.errorshow = true;
         } else {
           document.querySelectorAll(".group-item")[i].style.display = "";
-          this.errorshow = false;
+          resultFound = true;
         }
       }
+      this.errorshow = !resultFound;
     },
   },
 };
